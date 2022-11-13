@@ -1,0 +1,20 @@
+{
+  "radiology": [
+    {
+      "cin": "11256327",
+      "name": "MK",
+      "traitement": "Radiothérapie",
+      "analyse": "Visiopor",
+      "date": "2022-11-01T23:00:00.000Z",
+      "id": 3
+    },
+    {
+      "cin": "05698521",
+      "name": "KOBS",
+      "traitement": "Lasers",
+      "analyse": "PRP",
+      "date": "2022-11-01T23:00:00.000Z",
+      "id": 4
+    }
+  ]
+}

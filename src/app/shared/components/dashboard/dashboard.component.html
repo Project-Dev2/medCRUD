@@ -1,0 +1,66 @@
+<input type="checkbox" id="sidebar-toggle">
+<div class="sidebar">
+    <div class="sidebar-header">
+        <h1></h1>
+        <label for="sidebar-toggle" class="bi bi-list-ul"></label>
+    </div>
+
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a routerLink="">
+                    <i class="bi bi-house-door"></i>
+                    <span>Acceuil</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Compte</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="">
+                    <i class="bi bi-clipboard2-pulse"></i>
+                    <span>Analyses & Radiologies</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="">
+                    <i class="bi bi-card-heading"></i>
+                    <span>Fiche Patients</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="">
+                    <i class="bi bi-clock"></i>
+                    <span>Rendez-vous</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="">
+                    <i class="bi bi-file-earmark"></i>
+                    <span>Consultations</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-content">
+        
+    <header>
+        <img src="../../../../assets/imgs/logo.jpg" alt="">
+    </header>
+    
+    <main>
+        <section class="recent">
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <app-list-radiology></app-list-radiology>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</div>

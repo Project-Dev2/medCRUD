@@ -1,0 +1,57 @@
+<h1 mat-dialog-title>Gestion des Analyses et Radiologies</h1>
+<div mat-dialog-content>
+    <form [formGroup]="radiologyForm">
+        <mat-form-field appearance="outline">
+            <mat-label>CIN</mat-label>
+            <input formControlName="cin" matInput placeholder="CIN">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Nom & Prénom</mat-label>
+            <input formControlName="name" matInput placeholder="Name">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Traitements</mat-label>
+            <mat-select formControlName="traitement" placeholder="Traitements">
+                <mat-option value="Traitements" disabled>Traitements</mat-option>
+                <mat-option value="Rectifications">Rectifications</mat-option>
+                <mat-option value="Lasers">Lasers</mat-option>
+                <mat-option value="LED">LED</mat-option>
+                <mat-option value="HIFU">HIFU</mat-option>
+                <mat-option value="PRP">PRP</mat-option>
+                <mat-option value="Radiofréquences">Radiofréquences</mat-option>
+                <mat-option value="Acné">Acné</mat-option>
+                <mat-option value="Chute de Cheveux">Chute de Cheveux</mat-option>
+                <mat-option value="Radiothérapie">Radiothérapie</mat-option>
+                <mat-option value="Agents Topiques" disabled>Agents Topiques</mat-option>
+                <mat-option value="Agents de Nettoyage">Agents de Nettoyage</mat-option>
+                <mat-option value="Emollients">Emollients</mat-option>
+                <mat-option value="Antimicrobiens">Antimicrobiens</mat-option>
+                <mat-option value="Médicaments Anti-inflammatoire">Médicaments Anti-inflammatoire</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Analyses/Radiologies</mat-label>
+            <mat-select formControlName="analyse" placeholder="Analyses/Radiologies">
+                <mat-option value="Radiologies" disabled>Radiologies</mat-option>
+                <mat-option value="VisioFace">VisioFace</mat-option>
+                <mat-option value="Visiopor">Visiopor</mat-option>
+                <mat-option value="SkinDiagnostic">SkinDiagnostic</mat-option>
+                <mat-option value="Analyses" disabled>Analyses</mat-option>
+                <mat-option value="PRP">PRP</mat-option>
+                <mat-option value="PCR">PCR</mat-option>
+                <mat-option value="Multi Skin Test">Multi Skin Test</mat-option>
+                <mat-option value="Complete Skin Investigation (CSI)">Complete Skin Investigation (CSI)</mat-option>
+                <mat-option value="Skin Pigmentation Analyzer">Skin Pigmentation Analyzer</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Date Analyse/Radiologie</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addRadiology()">{{actionBtn}}</button>
+</div>

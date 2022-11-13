@@ -1,0 +1,14 @@
+mat-icon,
+span {
+    font-size: 15px;
+    color: rgb(90, 83, 83);
+}
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+@media(min-width: 1200px) {
+    table {
+        width: 100%;
+    }
+}

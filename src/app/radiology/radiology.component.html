@@ -1,0 +1,73 @@
+<div *ngIf="!loading">
+    <nav class="navbar p-2 bg-white fixed-top">
+        <div class="container">
+            <div class="navbar-brand">
+                <button class="btn btn-success" routerLink="/">
+                    <i class="bi bi-house-door"></i>
+                </button>
+                <button (click)="print()" class="btn btn-danger">
+                    <i class="bi bi-printer"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="radiology">
+        <div class="container">
+            <div class="card border-0">
+                <div class="card-body">
+                  <img src="../../assets/imgs/logo.jpg" alt="">
+                  <div class="text mt-4">
+                    <div>
+                        <h1 class="mb-2">Analyses & Radiologies</h1><br>
+                        <p>Dr : Lorem, 28 RUE IPSUM DOLOR SIT AMET CONSECTETUR</p>
+                        <p>Téléphone : (+216) 50 000 000</p>
+                        <p>Email : lorem@gmail.com</p>
+                    </div>
+                  </div>
+    
+                  <div class="container mt-4 mb-4">
+                    <div class="row justify-content-center">
+                        <table class="text-center">
+                            <tr>
+                              <td colspan="2">Coordonnées du Patient</td>
+                            </tr>
+                            <tr>
+                              <td>CIN</td>
+                              <td>{{data.cin}}</td>
+                            </tr>
+                            <tr>
+                              <td>Nom & Prénom</td>
+                              <td>{{data.name}}</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="row justify-content-center">
+                        <table class="text-center">
+                            <tr>
+                              <td colspan="2">Analyses & Radiologies</td>
+                            </tr>
+                            <tr>
+                              <td>Traitement</td>
+                              <td>{{data.traitement}}</td>
+                            </tr>
+                            <tr>
+                              <td>Analyse/Radiologie</td>
+                              <td>{{data.analyse}}</td>
+                            </tr>
+                            <tr>
+                              <td>Date Analyse/Radiologie</td>
+                              <td>{{data.date | date}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <app-spinner *ngIf="loading"></app-spinner>
+</div>

@@ -1,0 +1,44 @@
+nav {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.09);
+}
+.btn {
+    margin-right: 10px;
+}
+.radiology {
+    margin-top: 120px;
+}
+.card {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+img {
+    width: 120px;
+    height: 50px;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 25px;
+}
+p {
+    color: rgb(90, 83, 83);
+    font-size: 13px;
+}
+table {
+    border: 1px solid #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+th, td {
+    padding: 12px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:first-child {
+    background-color: rgb(11, 61, 102);
+    color: #fff;
+}
